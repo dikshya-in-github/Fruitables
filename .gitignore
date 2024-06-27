@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+fruitables-1.0.0
+f
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
