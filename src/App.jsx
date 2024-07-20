@@ -9,6 +9,7 @@ import Banner from "./components/Banner"
 import BestSeller from "./components/BestSeller"
 import Fact from "./components/Fact"
 import Tastimonial from "./components/Tastimonial"
+import Footer from "./components/Footer"
 
 // Libraries Stylesheet
 import "./lib/lightbox/css/lightbox.min.css"
@@ -31,6 +32,7 @@ function App() {
             <BestSeller/>
             <Fact/>
             <Tastimonial/>
+            <Footer/>
         </>
     )
 }
