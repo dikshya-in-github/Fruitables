@@ -3,8 +3,7 @@ import React from "react"
 export default function Banner() {
     return (
         <>
-            {/* <!-- Banner Section Start--> */}
-            <div classNameName="container-fluid banner bg-secondary my-5">
+            <div className="container-fluid banner bg-secondary my-5">
                 <div className="container py-5">
                     <div className="row g-4 align-items-center">
                         <div className="col-lg-6">

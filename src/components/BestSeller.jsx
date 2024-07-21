@@ -3,7 +3,6 @@ import React from 'react'
 export default function BestSeller() {
   return (
     <>
-     {/* <!-- Bestsaler Product Start --> */}
         <div className="container-fluid py-5">
             <div className="container py-5">
                 <div className="text-center mx-auto mb-5" style={{maxWidth: "700px"}}>

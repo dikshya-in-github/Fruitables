@@ -3,7 +3,6 @@ import React from "react"
 export default function Vesitable() {
     return (
         <>
-            {/*Vesitable Shop Start--> */}
             <div className="container-fluid vesitable py-5">
                 <div className="container py-5">
                     <h1 className="mb-0">Fresh Organic Vegetables</h1>

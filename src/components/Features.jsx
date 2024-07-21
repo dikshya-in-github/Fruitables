@@ -3,7 +3,6 @@ import React from "react"
 export default function Features() {
     return (
         <>
-            {/*Featurs Start*/}
             <div className="container-fluid service py-5">
                 <div className="container py-5">
                     <div className="row g-4 justify-content-center">

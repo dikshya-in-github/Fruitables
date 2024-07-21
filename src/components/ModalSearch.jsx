@@ -3,7 +3,6 @@ import React from "react"
 export default function ModalSearch() {
     return (
         <>
-            {/*Modal Search Start*/}
             <div
                 className="modal fade"
                 id="searchModal"

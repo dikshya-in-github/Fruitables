@@ -1,11 +1,8 @@
 import React from "react"
+import { Link } from "react-router-dom"; 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons"
-import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faMapMarkerAlt, faEnvelope, faSearch, faShoppingBag, faUser } from "@fortawesome/free-solid-svg-icons"
 
 export default function Navbar() {
     return (
@@ -15,14 +12,22 @@ export default function Navbar() {
                     <div className="d-flex justify-content-between">
                         <div className="top-info ps-2">
                             <small className="me-3">
-                                <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: "#ffb524" }} />
+                                <FontAwesomeIcon
+                                    className="fas fa-map-marker-alt me-2 text-secondary"
+                                    icon={faMapMarkerAlt}
+                                    style={{ color: "#ffb524" }}
+                                />
                                 <a href="#" className="text-white">
                                     123 Street, New York
                                 </a>
                             </small>
 
                             <small className="me-3">
-                                <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffb524" }} />
+                                <FontAwesomeIcon
+                                    className="fas fa-envelope me-2 text-secondary"
+                                    icon={faEnvelope}
+                                    style={{ color: "#ffb524" }}
+                                />
                                 <a href="#" className="text-white">
                                     Email@Example.com
                                 </a>
@@ -45,7 +50,7 @@ export default function Navbar() {
 
                 <div className="container px-0">
                     <nav className="navbar navbar-light bg-white navbar-expand-xl">
-                        <a href="index.html" className="navbar-brand">
+                        <a href="/" className="navbar-brand">
                             <h1 className="text-primary display-6">Fruitables</h1>
                         </a>
                         <button
@@ -58,10 +63,10 @@ export default function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
                             <div className="navbar-nav mx-auto">
-                                <a href="index.html" className="nav-item nav-link active">
+                                <a href="/" className="nav-item nav-link active">
                                     Home
                                 </a>
-                                <a href="shop.html" className="nav-item nav-link">
+                                <a href="shop" className="nav-item nav-link">
                                     Shop
                                 </a>
                                 <a href="shop-detail.html" className="nav-item nav-link">
