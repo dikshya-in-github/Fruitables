@@ -18,21 +18,54 @@ import "./lib/owlcarousel/assets/owl.carousel.min.css"
 import "./css/style.css"
 import "./css/bootstrap.min.css"
 
+import { createBrowserRouter, RouterProvider, Route, Link } from "react-router-dom"
+
 function App() {
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: (
+                <div>
+                    <h1>Home</h1>
+                    <Link to="about">About Us</Link>
+                </div>
+            ),
+        },
+        {
+            path: "about",
+            element: <div>About</div>,
+        },
+    ])
+
     return (
         <>
             <Navbar />
-            <ModalSearch/>
-            <HeroStart/>
-            <FeatureSection/>
-            <FruitShop/>
-            <Features/>
-            <Vesitable/>
-            <Banner/>
-            <BestSeller/>
-            <Fact/>
-            <Tastimonial/>
-            <Footer/>
+            {/* baki */}
+
+            <RouterProvider router={router} />
+            
+            <ModalSearch />
+            {/* baki */}
+            <HeroStart />
+            {/* baki */}
+            <FeatureSection />
+            {/* ✅ */}
+            <FruitShop />
+            {/* imgs baki */}
+            <Features />
+            {/* imgs */}
+            <Vesitable />
+            {/* baki */}
+            <Banner />
+            {/* img */}
+            <BestSeller />
+            {/* img */}
+            <Fact />
+            {/* ✅ */}
+            <Tastimonial />
+            {/* baki */}
+            <Footer />
+            {/*img  */}
         </>
     )
 }
